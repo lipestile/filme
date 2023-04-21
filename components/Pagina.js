@@ -10,10 +10,10 @@ const Pagina = (props) => {
     <>
       <Cabecalho/>
 
-      <div className=" bg-secondary text-white py-3 text-center mb-3" >
+      <div className=" bg-success text-white py-3 text-center mb-3" >
          <h1>{props.titulo}</h1>
       </div>
-      <Container className='mb-5'>
+      <Container className='mb-5 '>
        {props.children}
       </Container>
       <Rodape/>

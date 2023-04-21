@@ -20,7 +20,7 @@ const index = (props) => {
                       <Card.Body>
                         <Card.Title>{item.title}</Card.Title>
                         <p>{item.overview}</p>
-                        <p>{item.vote_average}</p>
+                        <p>✨{item.vote_average}</p>
                         <Link className='btn btn-success' href={'/filmes/' + item.id}>Detalhes</Link>
                       </Card.Body>
                     </Card>
