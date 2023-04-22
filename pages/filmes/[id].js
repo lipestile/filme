@@ -33,11 +33,10 @@ const Detalhes = ({ filme, atores }) => {
       <Row>
         {atores.map(item => (
           <Col className='mb-3' md={2}>
-            
-            <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + item.profile_path}/>
-            
-            
-          </Col>
+            <Link href={'/atores/' + item.id}>
+               <Card.Img variant="top" title={item.name} src={'https://image.tmdb.org/t/p/w500/' + item.profile_path}/>
+            </Link>
+           </Col>
         ))}
 
       </Row>
