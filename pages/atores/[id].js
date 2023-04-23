@@ -15,7 +15,7 @@ const Detalhes = ({ ator, imgator, popular, tvpopular}) => {
 
                     <p><strong>Data de Nascimento:</strong>{ator.birthday}</p>
                     <br></br>
-                    <p><strong>Data de Nascimento:</strong>{ator.place_of_birth}</p>
+                    <p><strong>Local de Nascimento:</strong>{ator.place_of_birth}</p>
                     <br></br>
                     <p>{ator.biography}</p>
                 </Col>
