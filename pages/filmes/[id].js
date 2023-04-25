@@ -38,6 +38,7 @@ const Detalhes = ({ filme, atores }) => {
             </Link>
            </Col>
         ))}
+      
 
       </Row>
 
