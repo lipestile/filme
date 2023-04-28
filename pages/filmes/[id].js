@@ -1,3 +1,4 @@
+import Galeria from '@/components/Galeria'
 import Pagina from '@/components/Pagina'
 import apiThemoviedb from '@/services/apiThemoviedb'
 import Link from 'next/link'
@@ -30,14 +31,9 @@ const Detalhes = ({ filme, atores }) => {
         </Col>
       </Row>
       <h2>Atores</h2>
+      
       <Row>
-        {atores.map(item => (
-          <Col className='mb-3' md={2}>
-            <Link href={'/atores/' + item.id}>
-               <Card.Img variant="top" title={item.name} src={'https://image.tmdb.org/t/p/w500/' + item.profile_path}/>
-            </Link>
-           </Col>
-        ))}
+      <Galeria  lista={atores} size={1} foto="profile_path" link="/atores/"></Galeria>
       
 
       </Row>

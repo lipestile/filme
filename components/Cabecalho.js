@@ -1,16 +1,20 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import Link from 'next/link';
+
 
 
 const Cabecalho = () => {
+
+
   return (
     <>
         <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Movies</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Casa</Nav.Link>
+            <Nav.Link href="/atores">Atores</Nav.Link>
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">

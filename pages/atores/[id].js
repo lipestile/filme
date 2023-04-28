@@ -3,6 +3,7 @@ import apiThemoviedb from '@/services/apiThemoviedb'
 import Pagina from '@/components/Pagina'
 import { Card, Col, Row } from 'react-bootstrap'
 import Link from 'next/link'
+import Galeria from '@/components/Galeria'
 
 const Detalhes = ({ ator, imgator, popular, tvpopular}) => {
     return (
@@ -20,7 +21,13 @@ const Detalhes = ({ ator, imgator, popular, tvpopular}) => {
                     <p>{ator.biography}</p>
                 </Col>
             </Row>
-            <h2>Imagens</h2>
+            
+                <Galeria  lista={imgator} size={1} foto="file_path"></Galeria>
+                <Galeria titulo="Filmes que ja atuou" lista={popular} size={2} foto="poster_path"></Galeria>
+                <Galeria titulo="series que ja atuou" lista={tvpopular} size={2} foto="poster_path"></Galeria>
+              
+
+                
             <Row>
                 {imgator.map(item => (
                     <Col className='mb-3' md={2}>
@@ -28,8 +35,8 @@ const Detalhes = ({ ator, imgator, popular, tvpopular}) => {
                     </Col>
                 ))}
             </Row>
-            <h2>Filmes que atuou</h2>
 
+                    <h2>filmes que atuou</h2>
             <Row>
                 {popular.map(item => (
                     <Col className='mb-3' md={2}>
